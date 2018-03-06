@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MainPage</title>
+  <link rel="stylesheet" href="main.css" type="text/css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">PHILIPPINE ARTS ORGANIZATION</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation" style="">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor02">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html"><button type="button" class="btn btn-outline-success">HOME</button> </a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="Community.html"><button type="button" class="btn btn-outline-success">COMMUNITY</button> </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Staffs page.html"><button type="button" class="btn btn-outline-success">STAFFS</button> </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Schools.html"><button type="button" class="btn btn-outline-success">SCHOOLS</button> </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="LOGIN.html"><button type="button" class="btn btn-outline-success">LOGIN</button> </a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<div class="flex-container">
+<header>
+  <h1>SKT ACADEMY</h1>
+</header>
+
+<nav class="nav">
+<ul>
+  <a>TOP 10 SCHOLARS</a>
+  <li><a href="#">RORENS</a></li>
+  <li><a href="#">RORENs</a></li>
+  <li><a href="#">ROREns</a></li>
+  <li><a href="#">RORens</a></li>
+  <li><a href="#">ROrens</a></li>
+  <li><a href="#">Rorens</a></li>
+  <li><a href="#">rorens</a></li>
+  <li><a href="#">ROREns</a></li>
+  <li><a href="#">ROREns</a></li>
+
+</ul>
+</nav>
+
+<article class="article">
+  <h1>SKT academy</h1>
+  <p>blahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblah</p>
+  <p>blahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblah</p>
+  <p><strong>blahblahblahblahblahs!</strong></p>
+</article>
+<article class="article">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="Gallery1.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="Gallery2.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="Gallery3.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="Gallery4.jpg" style="width:100%">
+  <div class="text">Caption Four</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+  <center><p><strong>blahblahblahblahblahs!</strong></p></center>
+</article>
+
+<footer>Copyright &copy; ...ACADEMY.com</footer>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>
